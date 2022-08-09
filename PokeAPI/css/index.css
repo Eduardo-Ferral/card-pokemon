@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+    /*tamaño de fuente  */
+    /*font-size:62.5%  con esto hacemos que 1rem= 10px      ;
+  */
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    
+   font-family: 'Kumbh Sans', sans-serif;
+   
+}
+/*agregando imagen de fondo*/
+.main-font{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/pokemon-fondo-1.jpg");
+  background-color: #cccccc;
+  width: 100%;
+  height: 100vh;
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  position: relative;
+
+}
+.newflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+    background-color: rgba(231, 231, 231, 0.89);
+    width: 20rem;
+    height: 23rem;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin:1rem;
+    overflow:hidden; 
+    box-shadow:7px 7px 5px 2px rgba(4, 7, 31, 0.815);
+}
+.card-header{
+  width: 100%;
+  height: 40%;
+}
+.card-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-body-images{
+    width:7rem ;
+    border: 5px solid white;
+    border-radius: 30%;
+    height: 8rem;
+    margin-top: -70px;
+}
+
+.card-body-title{
+font-size: 1.2rem;
+}
+.card-body-title span{
+  font-weight: lighter;
+  font-family: Helvetica, sans-serif;
+}
+.card-footer{
+display: flex;
+justify-content:space-evenly;
+border-top: 1.5px solid lightslategrey;
+
+}
+.card-footer-features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  margin-top: 1rem;
+}
+h3{
+  margin: 0;
+}
+p{
+  margin-top:5px   ;
+}
+.tipo{
+  font-weight: bold;
+}
+
+.next{
+  background-color: black;
+  font-family: cursive;
+  color: #cccccc;
+  border-radius: 20px;
+  border-color: #cccccc;
+  width: 5rem;
+}
+.next:hover,.previous:hover{
+  background-color: rgb(10, 76, 163);
+}
+.previous{
+  background-color: black;
+  font-family: cursive;
+  color: #cccccc;
+  border-radius: 20px;
+  border-color: #cccccc;
+  width: 5rem;
+}
